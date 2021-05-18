@@ -1,0 +1,72 @@
+.toggle {
+  position: relative;
+  width: 60vw;
+  height: 45px;
+  margin: 0 0 19px;
+  padding: 0 5px 0 5px;
+  border-radius: 100px;
+  border: solid 1px #fbfbfb;
+  color: white;
+  display: inline-block;
+}
+
+.toggle .toggle-checkbox {
+  display: none;
+}
+
+.toggle .toggle-label {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  border: 0 solid #ccc;
+  border-radius: 20px;
+  margin: 0;
+  height: 100%;
+}
+
+.toggle .pointer-cursor {
+  cursor: pointer;
+}
+
+.toggle .toggle-answers {
+  width: 100%;
+  transition: margin 0.3s ease-in 0s;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.toggle .toggle-answers .left-answer,
+.toggle .toggle-answers .right-answer {
+  width: 50%;
+  text-align: center;
+  z-index: 1;
+  font-family: Muli;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.38px;
+  text-align: center;
+}
+
+.toggle .toggle-switch {
+  opacity: 0.4;
+  width: 50%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 50%;
+  border: 0 solid #ccc;
+  border-radius: 100px;
+  transition: all 0.3s ease-in 0s;
+  box-shadow: 0 0 5px #7d7474;
+}
+
+.toggle .toggle-checkbox:checked + .toggle-label .toggle-switch {
+  right: 0px;
+}
